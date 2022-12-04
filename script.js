@@ -1,9 +1,13 @@
 const FIVER = document.querySelector(".fiver");
 const ONES = document.querySelector(".ones");
-const ROD = document.createElement("div");
-ROD.setAttribute("class", "rod");
+
+function makeRod(parentNode) {
+    let rod = document.createElement("div");
+    rod.setAttribute("class", "rod");
+    parentNode.appendChild(rod);
+}
 
 for (let i = 0; i < 17; i++) {
-    ONES.appendChild(ROD);
-    FIVER.appendChild(ROD);
+    makeRod(ONES);
+    makeRod(FIVER);
 }

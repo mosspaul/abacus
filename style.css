@@ -39,10 +39,21 @@ body {
     height: 100%;
     width: 5px;
     background-color: tan;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
+
 
 #middle {
     width: 100%;
     height: 1.5vh;
     background-color: black;
+}
+
+.bead {
+    height: 20%;
+    width: 20px;
+    background-color: brown;
 }
